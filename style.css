@@ -1,19 +1,83 @@
-/* * {
-  box-sizing: border-box;
-} */
-
-.grid {
-  border: 1px solid black;
-  height: 180px;
-  width: 180px;
-  display: flex;
-  flex-wrap: wrap;
+* {
+  margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  background-color: rgb(56, 55, 55);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(images/froggy-back.jpg) no-repeat center
+    center/cover;
+  height: 100vh;
+  color: rgb(163, 203, 203);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: rgb(5, 248, 5);
+  text-transform: capitalize;
+}
+
+h2 {
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+#time-left {
+  color: red;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  margin: 15px;
+  background-color: green;
+  color: aliceblue;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: rgb(136, 186, 62);
+  color: rgb(36, 34, 34);
+  font-weight: bolder;
+}
+
+.grid {
+  border: 2px solid rgb(102, 88, 88);
+  border-radius: 15px;
+  box-shadow: 8px 8px rgb(70, 70, 64);
+  height: 360px;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background-color: burlywood;
+}
+
 .grid div {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
 }
 
 .ending-block {
